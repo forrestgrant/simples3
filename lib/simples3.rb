@@ -1,0 +1,1 @@
+require 'simples3/s3.rb'
