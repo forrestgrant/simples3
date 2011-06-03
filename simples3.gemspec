@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Forrest Grant"]
   s.email       = ["forrest@forrestgrant.com"]
-  s.homepage    = ""
+  s.homepage    = "https://github.com/forrestgrant/simples3"
   s.summary     = %q{Makes AWS::S3 Calls simpler}
   s.description = %q{Simple Wrapper for AWS::S3}
 
