@@ -1,15 +1,15 @@
-= simples3
-== Install
-=== coming soon
-  "gem install simples3"
+# simples3
+## Install
+### coming soon
+  gem install simples3
 
-=== from source
-  "git clone http://github.com/forrestgrant/simples3"
-  "cd simples3"
-  "rake build"
-  "rake install"
+### from source
+  git clone http://github.com/forrestgrant/simples3
+  cd simples3
+  rake build
+  rake install
 
-== Configuration
+## Configuration
   Add `simples3.yml` to config/ with the following:
 		development:
 		  bucket_name: appname_development
@@ -27,5 +27,5 @@
 		  secret_access_key:
 
 
-== Usage
+## Usage
   See lib/simples3 for methods
