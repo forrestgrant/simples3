@@ -1,0 +1,1 @@
+class Config < RuntimeError; end

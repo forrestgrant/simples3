@@ -2,8 +2,6 @@ require 'aws/s3'
 
 module Simples3
   
-  class Config < RuntimeError; end
-  
   def self.ensure_connection
     @@config = YAML.load(ERB.new(File.read("#{Rails.root}/config/simples3.yml")).result)[RAILS_ENV].symbolize_keys
     @@connection = AWS::S3::Base.establish_connection!(

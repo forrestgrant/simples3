@@ -1,6 +1,7 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 require "simples3/version"
+require "simples3/exceptions"
 
 Gem::Specification.new do |s|
   s.name        = "simples3"
