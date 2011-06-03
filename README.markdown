@@ -1,6 +1,6 @@
 # simples3
 ## Install
-### coming soon
+### RubyGems.org
 	$ gem install simples3
 
 ### from source
