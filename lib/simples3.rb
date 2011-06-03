@@ -2,13 +2,15 @@ require 'aws/s3'
 
 module Simples3
   
+  class Config < RuntimeError; end
+  
   def self.ensure_connection
+    raise Config.new "#{Rails.root}/config/simples3.yml not found." unless File.exists?("#{Rails.root}/config/simples3.yml")
     @@config = YAML.load(ERB.new(File.read("#{Rails.root}/config/simples3.yml")).result)[RAILS_ENV].symbolize_keys
     @@connection = AWS::S3::Base.establish_connection!(
       :access_key_id     => @@config[:access_key_id],
       :secret_access_key => @@config[:secret_access_key]
     ) if AWS::S3::Base.connections.empty?
-    raise Config.new "#{Rails.root}/config/simples3.yml not found." unless File.exists?("#{Rails.root}/config/simples3.yml")
   end
   
   def self.file_exists?(path, bucket = nil)
