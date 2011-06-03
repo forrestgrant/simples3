@@ -1,7 +1,9 @@
 require 'aws/s3'
 
 module Simples3
-    
+  
+  class Config < RuntimeError; end
+  
   def self.ensure_config
     raise Simples3::Config "boom"
   end
