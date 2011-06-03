@@ -1,1 +1,3 @@
-class Config < RuntimeError; end
+module Simples3
+  class Config < RuntimeError; end
+end
