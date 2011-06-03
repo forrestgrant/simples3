@@ -29,4 +29,4 @@
 
 
 ## Usage
-  See lib/simples3 for methods
+  See `lib/simples3.rb` for methods
